@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Pinot and Picasso – Paint and Sip" verbose="4" thread-count="3"
+       parallel="tests">
+    <listeners>
+        <listener
+                class-name="com.qa.pinotpicaso.listeners.AnnotationTransformer"/>
+        <listener
+                class-name="com.qa.pinotpicaso.listeners.ExtentReportListener"/>
+        <listener
+                class-name="com.qa.pinotpicaso.listeners.TestAllureListener"/>
+    </listeners>
+    <test name="Pinot and Picasso Login Page Test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="browserversion" value="89"/>
+        <classes>
+            <class name="com.qa.pinotpicaso.tests.SessionBookWithUserTest"/>
+        </classes>
+    </test>
+<!--    <test name="Pinot and Picasso Home Page Test">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <parameter name="browserversion" value="89"/>-->
+<!--        <classes>-->
+<!--            <class name="com.qa.pinotpicaso.tests.HomePageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

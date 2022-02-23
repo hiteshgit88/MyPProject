@@ -1,0 +1,1 @@
+{"uuid":"776e863b-c8c5-429d-821d-0a1c9519001c","name":"PinotPicasoAutomation","children":["c8f68ea9-0b6b-4af4-88f7-e5b17fb57e5c"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1641973312336,"stop":1641973330838}],"afters":[],"links":[],"start":1641973312313,"stop":1641973331339}
